@@ -1,0 +1,64 @@
+{
+  "name": "asaas-node-sdk",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Unofficial Node.js/TypeScript SDK for Asaas payment platform",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/esm/index.d.ts",
+        "default": "./lib/esm/index.js"
+      },
+      "require": {
+        "types": "./lib/cjs/index.d.ts",
+        "default": "./lib/cjs/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build": "bun run clean && bun run build:cjs && bun run build:esm",
+    "generate": "openapi-ts",
+    "prepublishOnly": "bun run build",
+    "test": "bun test"
+  },
+  "keywords": [
+    "asaas",
+    "payment",
+    "sdk",
+    "typescript",
+    "node",
+    "bun"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@hey-api/openapi-ts": "^0.62.3",
+    "@types/node": "^22.10.10",
+    "typescript": "^5.7.3"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/asaas-node-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/asaas-node-sdk/issues"
+  },
+  "homepage": "https://github.com/yourusername/asaas-node-sdk#readme",
+  "dependencies": {
+    "@hey-api/client-fetch": "^0.7.1"
+  }
+}
