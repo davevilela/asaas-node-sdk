@@ -3,7 +3,8 @@
   "compilerOptions": {
     "module": "es2015",
     "outDir": "./lib/esm",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "composite": true
   },
   "include": ["src/**/*"]
 }
