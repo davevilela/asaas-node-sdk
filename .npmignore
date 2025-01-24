@@ -2,6 +2,9 @@
 src/
 tests/
 examples/
+**/__tests__/
+*.test.*
+*.spec.*
 
 # Config files
 .github/
@@ -9,25 +12,20 @@ tsconfig*.json
 openapi-ts.config.ts
 .gitignore
 .npmignore
+.eslintrc*
+.prettierrc*
+jest.config.*
 
 # Build artifacts
 coverage/
 .nyc_output/
+*.tsbuildinfo
 
 # Development
 *.log
 .DS_Store
 .env
 .env.*
-
-# Lock files
-bun.lockb
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
-# Editor
+node_modules/
 .vscode/
 .idea/
-*.swp
-*.swo

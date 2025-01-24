@@ -13,7 +13,8 @@
     "lib": ["es2017", "dom"],
     "moduleResolution": "node",
     "baseUrl": "./src",
-    "types": ["bun-types"]
+    "types": ["bun-types"],
+    "removeComments": true
   },
-  "exclude": ["node_modules", "dist", "lib"]
+  "exclude": ["node_modules", "dist", "lib", "**/__tests__/**"]
 }
