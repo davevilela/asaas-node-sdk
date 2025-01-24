@@ -49,6 +49,7 @@
   "devDependencies": {
     "@hey-api/openapi-ts": "^0.62.3",
     "@types/node": "^22.10.10",
+    "bun-types": "^1.2.0",
     "typescript": "^5.7.3"
   },
   "files": [
