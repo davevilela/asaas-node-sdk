@@ -1,0 +1,33 @@
+# Source
+src/
+tests/
+examples/
+
+# Config files
+.github/
+tsconfig*.json
+openapi-ts.config.ts
+.gitignore
+.npmignore
+
+# Build artifacts
+coverage/
+.nyc_output/
+
+# Development
+*.log
+.DS_Store
+.env
+.env.*
+
+# Lock files
+bun.lockb
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,5 +1,5 @@
 {
-  "name": "asaas-node-sdk",
+  "name": "@chagas/asaas-node-sdk",
   "version": "0.1.0",
   "type": "module",
   "description": "Unofficial Node.js/TypeScript SDK for Asaas payment platform",
@@ -33,9 +33,18 @@
     "sdk",
     "typescript",
     "node",
-    "bun"
+    "bun",
+    "payments",
+    "brazil",
+    "boleto",
+    "pix",
+    "credit-card"
   ],
-  "author": "",
+  "author": {
+    "name": "Davi Vilela",
+    "email": "davi@chagas.dev.br",
+    "url": "https://github.com/chagas"
+  },
   "license": "MIT",
   "devDependencies": {
     "@hey-api/openapi-ts": "^0.62.3",
@@ -52,13 +61,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/asaas-node-sdk.git"
+    "url": "git+https://github.com/chagas/asaas-node-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/asaas-node-sdk/issues"
+    "url": "https://github.com/chagas/asaas-node-sdk/issues"
   },
-  "homepage": "https://github.com/yourusername/asaas-node-sdk#readme",
+  "homepage": "https://github.com/chagas/asaas-node-sdk#readme",
   "dependencies": {
     "@hey-api/client-fetch": "^0.7.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
