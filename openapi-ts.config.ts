@@ -21,6 +21,7 @@ export default defineConfig({
     },
     {
       asClass: false,
+      throwOnError: true,
 
       name: "@hey-api/sdk",
     },
